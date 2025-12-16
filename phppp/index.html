@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealing System</title>
+</head>
+<body>
+
+    <h2>Signup</h2>
+    <input type="email" id="email" placeholder="Enter Email">
+    <input type="password" id="password" placeholder="Enter Password">
+    <button onclick="signup()">Signup</button>
+
+
+    <h2>Search Cars</h2>
+<input type="text" id="search" placeholder="Search Car">
+<button onclick="searchCars()">Search</button>
+<ul id="carList"></ul>
+
+
+<button onclick="bookCar(1, 101)">Book Car</button>
+
+    <script>
+        function signup() {
+            let email = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            fetch("http://localhost/car_dealing_backend.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: `action=signup&email=${email}&password=${password}`
+            })
+            .then(response => response.json())
+            .then(data => alert(data.message))
+            .catch(error => console.error("Error:", error));
+        }
+
+
+        function searchCars() {
+        let search = document.getElementById("search").value;
+
+        fetch(`http://localhost/car_dealing_backend.php?search=${search}`)
+            .then(response => response.json())
+            .then(data => {
+                let carList = document.getElementById("carList");
+                carList.innerHTML = "";
+                data.forEach(car => {
+                    carList.innerHTML += `<li>${car.title} - $${car.price}</li>`;
+                });
+            })
+            .catch(error => console.error("Error:", error));
+    }
+
+
+    function bookCar(carId, userId) {
+        fetch("http://localhost/car_dealing_backend.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: `action=book_car&car_id=${carId}&user_id=${userId}`
+        })
+        .then(response => response.json())
+        .then(data => alert(data.message))
+        .catch(error => console.error("Error:", error));
+    }
+
+
+    </script>
+
+</body>
+</html>

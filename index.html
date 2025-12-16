@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Car Showroom</title>
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="styal.css">
+
+</head>
+<body>
+                    <!--navbar-->
+
+    <header class="header"> 
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#" class="logo"> <span>auto</span>rizz</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">Services</a>
+            <a href="#featured">Featured</a>
+            <a href="#reviews">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+
+            <!--login form-->
+
+    <div class="login-form-container">
+        <form action="">
+            <span  class="fas fa-times" id="close-login-form"></span>
+            <h3>User Login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>Forget your password <a href="#">Click here</a></p>
+            <input type="Submit" value="Login now" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">Google</a>
+                <a href="#" class="btn">Facebook</a>
+            </div>
+            <p>Don't have an account <a href="#">Create one</a></p>
+        </form>
+    </div>
+
+
+        <!--section-01/auto-slid-->
+
+    <section class="home" id="home">
+      
+        <div class="slider">
+            <div class="slides">
+             
+                
+                <div class="slide"><img src="./car images/a8.avif" alt="Image 3"></div>
+                <div class="slide"><img src="./car images/car33.jpg" alt="Image 3"></div>
+                
+               
+               
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--section-02/icon-->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>5+</h3>
+                <p>Branches</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>350+</h3>
+                <p>Cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>453+</h3>
+                <p>Happy  Clients</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>430+</h3>
+                <p>New cars</p>
+            </div>
+        </div>
+    </section>
+
+
+
+            <!--section-03/vehicles slider-->
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading"> Popular <span>Vehicles</span></h1>
+       <div class="swiper vehicles-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./car images/a1.jpg" alt="">
+                <div class="content">
+                    <h3>Maruti dzire</h3>
+                    <div class="price"> <span>Price: </span> rs.6.79 lakh</div>
+                    <p>
+                        
+                        <span class="fas fa-circle"></span> 1197cc
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> 24.79kmpl
+                        <span class="fas fa-circle"></span> 80bhp
+                    </p>
+                    <a href="detail.html" class="btn" id="c1">Check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./car images/a6.jpg" alt="">
+                <div class="content">
+                    <h3>Mahindra XUV 700</h3>
+                    <div class="price"> <span>Price: </span>rs.20.00lakh</div>
+                    <p>
+                        
+                        <span class="fas fa-circle"></span> 1997cc
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> 12.35kmpl
+                        <span class="fas fa-circle"></span> 197bhp
+                    </p>
+                    <a href="detail2.html" class="btn" id="c2">Check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./car images/a5.jpg" alt="">
+                <div class="content">
+                    <h3>Mahindra scorpio N</h3>
+                    <div class="price"> <span>Price: </span>rs.15.99lakh</div>
+                    <p>
+                        
+                        <span class="fas fa-circle"></span> 1997cc
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> 20kmpl
+                        <span class="fas fa-circle"></span> 200bhp
+                    </p>
+                    <a href="detail3.html" class="btn" id="c3">Check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./car images/a10.webp" alt="">
+                <div class="content">
+                    <h3>TATA Harrier</h3>
+                    <div class="price"> <span>Price: </span> rs.22.00lakh</div>
+                    <p>
+                        
+                        <span class="fas fa-circle"></span> 1956cc
+                        <span class="fas fa-circle"></span> diesel
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> 16.8kmpl
+                        <span class="fas fa-circle"></span> 168bhp
+                    </p>
+                    <a href="detail4.html" class="btn" id="c4">Check out</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./car images/a16.webp" alt="">
+                <div class="content">
+                    <h3> Toyota Fortuner</h3>
+                    <div class="price"> <span>Price: </span>rs.38.76lakh</div>
+                    <p>
+                        
+                        <span class="fas fa-circle"></span> 2697cc
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> manual
+                        <span class="fas fa-circle"></span> 10kmpl
+                        <span class="fas fa-circle"></span> 164bhp
+                    </p>
+                    <a href="detail5.html" class="btn" id="c5">Check out</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+       </div>
+
+
+    </section>
+
+
+        <!--section-04/our services-->
+
+    <section class="services" id="services">
+        <h1 class="heading"> Our <span> Services </span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>Car Selling</h3>
+                <p>Don't miss your chance to own this exceptional 2025 Car. Our knowledgeable team is here to assist you with any questions and guide you through the buying process. </p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>Parts Repair</h3>
+                <p>Schedule your car parts repair service with Autorizz today, and trust us to get your vehicle back on the road in optimal condition. Contact our service team to book an appointment or inquire about our range of repair services. Your car deserves the best .</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>Car Insurance</h3>
+                <p>Don't leave your vehicle's protection to chance. Contact Autorizz's insurance experts today to discuss your car insurance needs. We're committed to providing you with the peace of mind you deserve on every journey. Your safety and security are our top priorities!.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>Battery Replacement</h3>
+                <p>Is your vehicle showing signs of a weak or failing battery? Don't let a dead battery leave you stranded. Contact Autorizz today to schedule your battery inspection and replacement service. We're here to ensure your vehicle starts reliably and keeps you confidence.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>Oil Change</h3>
+                <p>Don't delay your vehicle's much-needed oil change. Contact Autorizz today to schedule your oil change service. Our goal is to help you maintain the heart of your vehicle, ensuring it performs at its best mile after mile. Trust us for all for your support, and time.</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support </h3>
+                <p>At AUTORizz, our commitment to your satisfaction extends beyond regular business hours. Experience the convenience and peace of mind of 24/7 support by choosing us for all your automotive needs. We're here to serve you around the clock,& good service</p>
+                <a href="#" class="btn">Read more</a>
+            </div>
+        </div>
+    </section>
+
+
+        <!--section-05/featuredcar-->
+    <section class="featured" id="featured">
+        <h1 class="heading"> <span> Featured </span> cars</h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./car images/a3.webp" alt="">
+                    <h3>Maruti Baleno</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">7.10lakh</div>
+                    <div class="price">1197cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">22.35kmpl</div>
+                    <a href=".//cars detail/index.html" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a9.jpg" alt="">
+                    <h3>TATA Nexon</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.8.00lakh</div>
+                    <div class="price">1199cc</div>
+                    <div class="price">diesel</div>
+                    <div class="price">17.44kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a17.jpg" alt="">
+                    <h3>Toyota innova</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.21.00lakh</div>
+                    <div class="price">2393cc</div>
+                    <div class="price">patrol</div>
+                    <div class="price">10kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a4.jpeg" alt="">
+                    <h3>Maruti Ertiga</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.8.69lakh</div>
+                    <div class="price">1462cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">20.51kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a14.jpg" alt="">
+                    <h3>Renault Triber</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.6.00lakh</div>
+                    <div class="price">999cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">21.7kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a12.png" alt="">
+                    <h3>Tata Curvv</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.13.65lakh</div>
+                    <div class="price">1199cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">17.89kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./car images/a21.jpg" alt="">
+                    <h3>Renault Kiger</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.7.41lakh</div>
+                    <div class="price">999cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">20.18kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+              
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a4.jpeg" alt="">
+                    <h3>Maruti Ertiga</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.8.69lakh</div>
+                    <div class="price">1462cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">20.51kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a19.jpeg" alt="">
+                    <h3>Maruti Suzuki Jimny</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.12.74lakh</div>
+                    <div class="price">1462cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">16.94kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a20.jpg" alt="">
+                    <h3>hyundai Creta</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs.13.54lakh</div>
+                    <div class="price">1497cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">20.94kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./car images/a13.jpg" alt="">
+                    <h3>Renault kwid</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">rs. 4.70lakh</div>
+                    <div class="price">999cc</div>
+                    <div class="price">petrol</div>
+                    <div class="price">21.7kmpl</div>
+                    <a href="#" class="btn">Check Out</a>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+
+        <!--email-->
+
+   <div class="newsletter">
+
+    <h3>Send yor Email for latest updates </h3>
+    <p>
+        "Driving Dreams, Delivering Quality" </p>
+    <form action="">
+        <input type="email" placeholder="enter your email" name="" id="">
+        <input type="submit" class="subscribe" name="" id="">
+    </form>
+   </div>
+
+
+   <!--section-06/ reviews-->
+
+   <section class="reviews" id="reviews">
+    <h1 class="heading"> Client's <span> review </span></h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="./review imgs/r1.jpg" alt="">
+                <div class="content">
+                    <p>"What an incredible car buying experience! From browsing the website to driving my new car off the lot, everything was seamless. The selection was impressive, the staff was knowledgeable, and the pricing was fair. I'm one happy customer!"</p>
+                    <h3>Rupesh</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="./review imgs/r2.jpeg" alt="">
+                <div class="content">
+                    <p>"I can't thank the team at Autorizz enough for making my car purchase a breeze. They helped me find the perfect vehicle that suited my needs and budget. Their customer service is top-notch, and I felt like a valued customer throughout the entire process."</p>
+                    <h3>pratima</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./review imgs/r3.JPG" alt="">
+                <div class="content">
+                    <p>"I was hesitant about buying a car online, but Autorizz exceeded my expectations. The website was user-friendly, and the live chat support was incredibly helpful. I found the car I wanted, and the delivery was prompt and hassle-free. Highly recommended!" </p>
+                    <h3>manish</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./review imgs/r4.JPG" alt="">
+                <div class="content">
+                    <p>"I've bought many cars in my lifetime, and this was by far the best experience. Autorizz provided a transparent and stress-free buying process. The car was in pristine condition, and the paperwork was a breeze. I'll be back for my next vehicle!"</p>
+                    <h3>vijju</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="./review imgs/r5.JPG" alt="">
+                <div class="content">
+                    <p>"I can't thank the team at Autorizz enough for their patience and professionalism. They answered all my questions, helped me secure financing, and even arranged for home delivery. The attention to detail and commitment to customer satisfaction were truly remarkable."</p>
+                    <h3>Rakesh</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+   </section>
+
+
+   <!--section-07/contact us-->
+
+   <section class="contact" id="contact">
+
+   <h1 class="heading"> <span>Contact</span> us</h1>
+
+
+   <div class="row">
+
+
+    <form action="">
+        <h3>Get in touch</h3>
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="number" placeholder="number" class="box">
+        <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+
+   </div>
+   </section>
+
+   <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Our Branches</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Korba</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> bilaspur</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> raipur</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Durg</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> ambikapur</a>
+        </div>
+        <div class="box">
+        <h3>Web-Interface</h3>
+        <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> vehicles</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> services</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> featured</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> reviews</a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> contact</a>
+        </div>
+
+        <div class="box">
+            <h3>Contact us</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+91 8871006756 </a>
+            <a href="#"> <i class="fas fa-phone"></i>+91 7724048341</a>
+            <a href="#"> <i class="fas fa-envelope"></i>kr857117@gmail.com</a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i>Korba (CG)</a>
+        </div>
+
+        <div class="box">
+            <h3>Online Platforms</h3>
+            <a href="#"> <i class="fab fa-facebook"></i> facebook</a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter</a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin</a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+    </div>
+
+    <div class="credit">made by ANIL & MD. GAUSH</div>
+   </section>
+
+<!--link/javascript-->
+     
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
